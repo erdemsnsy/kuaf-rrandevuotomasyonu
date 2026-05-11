@@ -22,6 +22,3 @@ Backend: PHP (Native / MVC yapısı)
 Frontend: HTML5, CSS3, JavaScript
 Veritabanı: MySQL
 Stil: Custom Modern CSS & UI Components
-
-
-<img width="1151" height="895" alt="image" src="https://github.com/user-attachments/assets/77e1b5ec-e458-4bf6-ad42-914c98ab9ab7" />
