@@ -22,3 +22,11 @@ Backend: PHP (Native / MVC yapısı)
 Frontend: HTML5, CSS3, JavaScript
 Veritabanı: MySQL
 Stil: Custom Modern CSS & UI Components
+
+WEB SİTE ANLATIM
+
+Giriş & Kayıt Ekranı: Bu kısımlarda kullanıcılar giriş yapmak için e-posta ve şifre ile, kayıt olmak için de (ad/soyad, e-posta, şifre, kayıt türü) gibi bilgiler ile sisteme kayıt olabilmekteler.
+<img width="614" height="612" alt="image" src="https://github.com/user-attachments/assets/2a0674fa-c413-4423-b083-22f2352b6c6e" />
+<img width="509" height="744" alt="image" src="https://github.com/user-attachments/assets/d6ec8403-de15-4e21-9ddc-56a6601bc607" />
+
+
