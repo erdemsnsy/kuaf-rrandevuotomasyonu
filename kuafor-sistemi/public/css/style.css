@@ -1,0 +1,282 @@
+/* Modern UI/UX Design System */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+    --primary: #4f46e5;
+    --primary-hover: #4338ca;
+    --secondary: #ec4899;
+    --dark: #1f2937;
+    --light: #f9fafb;
+    --text-main: #111827;
+    --text-muted: #6b7280;
+    --bg-color: #f3f4f6;
+    --surface: #ffffff;
+    --white: #ffffff;
+    --card-shadow: 0 10px 30px rgba(0,0,0,0.04);
+    --card-shadow-hover: 0 20px 40px rgba(0,0,0,0.08);
+    --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    --radius-sm: 10px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+}
+
+/* Dark Mode Variables */
+body.dark-mode {
+    --bg-color: #020617;
+    --text-main: #f1f5f9;
+    --text-muted: #94a3b8;
+    --surface: #1e293b;
+    --dark: #f8fafc;
+    --light: #334155;
+    --card-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    overflow-x: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3, h4, h5, h6, .brand-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: var(--text-main);
+}
+
+/* Forms */
+.form-control::placeholder {
+    color: var(--text-muted);
+    opacity: 0.7;
+}
+
+body.dark-mode .form-control::placeholder {
+    color: #94a3b8;
+}
+
+/* Glassmorphism Navbar */
+.navbar {
+    background: rgba(255, 255, 255, 0.85) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+    padding: 15px 0;
+    transition: var(--transition);
+}
+
+body.dark-mode .navbar {
+    background: rgba(15, 23, 42, 0.9) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar-brand {
+    color: var(--primary) !important;
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: -0.5px;
+}
+
+.nav-link {
+    color: var(--text-main) !important;
+    font-weight: 500;
+    position: relative;
+    padding: 8px 16px !important;
+    margin: 0 5px;
+    transition: var(--transition);
+    border-radius: var(--radius-sm);
+}
+
+.nav-link:hover {
+    color: var(--primary) !important;
+    background: rgba(79, 70, 229, 0.05);
+}
+
+body.dark-mode .nav-link:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #0f172a 0%, #000000 100%);
+    color: #ffffff !important;
+    padding: 100px 0;
+    border-radius: var(--radius-lg);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 60px !important;
+}
+
+body.dark-mode .hero-section {
+    background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hero-section h1 {
+    color: #ffffff !important;
+    font-weight: 800;
+    text-shadow: 0 2px 15px rgba(0,0,0,0.3);
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+}
+
+.hero-section .lead {
+    color: rgba(255, 255, 255, 0.95) !important;
+    font-weight: 400;
+}
+
+/* Cards */
+.card-custom, .card {
+    background: var(--surface);
+    border-radius: var(--radius-md);
+    border: 1px solid rgba(0,0,0,0.05);
+    box-shadow: var(--card-shadow);
+    transition: var(--transition);
+}
+
+body.dark-mode .card-custom, body.dark-mode .card {
+    border-color: rgba(255, 255, 255, 0.08);
+    background: rgba(30, 41, 59, 0.8);
+    backdrop-filter: blur(10px);
+}
+
+.card-custom:hover {
+    transform: translateY(-12px);
+    box-shadow: var(--card-shadow-hover);
+}
+
+.card-title {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 15px;
+}
+
+body.dark-mode .card-text, 
+body.dark-mode .text-muted, 
+body.dark-mode .small {
+    color: #cbd5e1 !important; /* Lighter gray for better visibility */
+}
+
+body.dark-mode .card-title {
+    color: #f8fafc !important;
+}
+
+/* Buttons */
+.btn {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    border-radius: 50px;
+    padding: 12px 28px;
+    transition: var(--transition);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary) 0%, #6366f1 100%);
+    border: none;
+    color: #ffffff !important;
+    box-shadow: 0 4px 15px rgba(79, 70, 229, 0.3);
+}
+
+body.dark-mode .btn-outline-primary {
+    color: #818cf8;
+    border-color: #818cf8;
+}
+
+body.dark-mode .btn-outline-primary:hover {
+    background: #818cf8;
+    color: #ffffff !important;
+}
+
+/* Forms */
+.form-control, .form-select {
+    border-radius: var(--radius-sm);
+    padding: 12px 20px;
+    border: 1px solid rgba(0,0,0,0.1);
+    background-color: var(--surface);
+    color: var(--text-main);
+    transition: var(--transition);
+}
+
+body.dark-mode .form-control, body.dark-mode .form-select {
+    background-color: #0f172a;
+    border-color: #334155;
+}
+
+.form-control:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.1);
+}
+
+/* Tables */
+.table {
+    background: var(--surface);
+    color: var(--text-main);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+}
+
+.table thead th {
+    background-color: rgba(0,0,0,0.02);
+    color: var(--text-muted);
+}
+
+body.dark-mode .table thead th {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Badges */
+.badge {
+    padding: 0.6em 1.2em;
+    border-radius: 30px;
+    font-weight: 500;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in-down {
+    animation: fadeInDown 0.6s ease-out forwards;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: var(--bg-color);
+}
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 10px;
+}
+body.dark-mode ::-webkit-scrollbar-thumb {
+    background: #334155;
+}
+
+/* Utility */
+.bg-light {
+    background-color: var(--light) !important;
+}
+body.dark-mode .bg-light {
+    background-color: #334155 !important;
+}
+.text-muted {
+    color: var(--text-muted) !important;
+}
+.list-group-item {
+    background-color: var(--surface);
+    color: var(--text-main);
+    border-color: rgba(0,0,0,0.05);
+}
+body.dark-mode .list-group-item {
+    border-color: rgba(255, 255, 255, 0.1);
+}
