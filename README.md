@@ -1,4 +1,4 @@
-📌 Proje Başlığı: Kuaför & Berber Yönetim Sistemi (Barber Management System)
+Proje Başlığı: Kuaför & Berber Yönetim Sistemi (Barber Management System)
 
 📝 Proje Açıklaması:
 
